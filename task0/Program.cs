@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using static System.Console;
+
+WriteLine("Введите число:");
+//считываем число из строки
+int a = int.Parse(ReadLine()!); //метод Parse работает только внутри себя только со строкой
+//int b = Convert.ToInt32(ReadLine());
+WriteLine($"Квадрат числа {a} равен {a*a}");//$ позволяет выводить переменные внутри строки, но для этого необходимо поставить фигурные скобки
