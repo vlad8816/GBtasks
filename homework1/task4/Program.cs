@@ -11,10 +11,10 @@ int b =int.Parse(ReadLine()!);
 WriteLine("Введите третье число ");
 int c =int.Parse(ReadLine()!);
 int max = 0;
-if(a>b & a>c)
+if(a>b && a>c)
      max = a;
-if (b>a & b>c)
+if (b>a && b>c)
     max = b;
-if(c>a&c>b) 
+if(c>a&&c>b) 
     max = c;
 WriteLine($"Max = {max}");
