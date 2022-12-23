@@ -10,9 +10,7 @@ if(!isParse)
     WriteLine("Не введено число");
     return;
 }
-int i = 1;
-while(i <= N)
+for (int i = 1; i <= N; i+=1)
 {
     WriteLine($"Квадрат числа {i} - {Math.Pow(i,2)}");
-    i+=1;
 }

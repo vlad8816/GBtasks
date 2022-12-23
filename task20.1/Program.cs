@@ -9,7 +9,7 @@ using static System.Console;
 Clear();
 WriteLine("Введите число");
 int number_of_details = Convert.ToInt32(ReadLine()!);
-if(number_of_details % 6 == 0)
+if(number_of_details % 6 == 0 )
 {
     WriteLine($"Такое количество деталей может быть, так как первый токарь сделал {number_of_details / 6},второй токарь сделал {number_of_details / 6}, а старший токарь сделал {number_of_details / 6 * 4}");
 }

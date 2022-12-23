@@ -9,19 +9,19 @@ WriteLine("Введите y");
 int y = Convert.ToInt32(ReadLine()!);
 if(x > 0 && y > 0)
 {
-    WriteLine("1 четверть");
+    WriteLine("I четверть");
 }
 if(x < 0 && y < 0)
 {
-    WriteLine("3 четверть");
+    WriteLine("III четверть");
 }
 if(x > 0 && y < 0)
 {
-    WriteLine("4 четверть");
+    WriteLine("IV четверть");
 }
 if(x < 0 && y > 0)
 {
-    WriteLine("2 четверть");
+    WriteLine("II четверть");
 }
 if(x == 0 && y == 0)
 {

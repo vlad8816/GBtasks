@@ -49,3 +49,6 @@ switch(number)
         break;
     }
 }
+
+//return досрочный выход из метода
+//break выходит из тела 
