@@ -1,2 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿//Напишите программу, которая выводит случайное число из отрезка [10, 99] и показывает наибольшую цифру числа.
+
+using static System.Console;
+Clear();
+int number = new Random().Next(10, 100);// Команда "Next" минимальное значение входит в интервал, а максимальное нет, т.е. если нужен диапазон 1-5, нужно писать Next(1,6)
+WriteLine(number);
+int a1 = number/10;//убирает младший разряд
+int a2 = number%10;//вернет младший разряд от деление
+if(a1 > a2)
+{
+    WriteLine(a1);
+}
+else
+{
+    WriteLine(a2);
+}

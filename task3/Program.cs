@@ -3,4 +3,4 @@ using static System.Console;
 
 TextWriter("Введите число ");
 int a = int.Parse(ReadLine()!);
-while (a >= a or )
+while (a >= a )
