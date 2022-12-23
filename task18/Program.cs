@@ -10,37 +10,37 @@ switch(number)
 {
     case 1:
     {
-    WriteLine("Понедельник");
+    WriteLine($"День недели № {number} - Понедельник");
     break;
     }
     case 2:
     {
-        WriteLine("Вторник");
+        WriteLine($"День недели № {number} - Вторник");
         break;
     }
     case 3:
     {
-        WriteLine("Среда");
+        WriteLine($"День недели № {number} - Среда");
         break;
     }
     case 4:
     {
-        WriteLine("Четверг");
+        WriteLine($"День недели № {number} - Четверг");
         break;
     }
     case 5:
     {
-        WriteLine("Пятница");
+        WriteLine($"День недели № {number} - Пятница");
         break;
     }
     case 6:
     {
-        WriteLine("Суббота");
+        WriteLine($"День недели № {number} - Суббота");
         break;
     }
     case 7:
     {
-        WriteLine("Воскресенье");
+        WriteLine($"День недели № {number} - Воскресенье");
         break;
     }
     default:
