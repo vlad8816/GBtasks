@@ -4,7 +4,15 @@ using static System.Console;
 Clear();
 
 Write("Введите номер четверти:");
-int i = int.Parse(ReadLine()!);
+bool isParse = int.TryParse(ReadLine(), out int i);// метод "TryParse" позволяет проверить можно - ли преобразовать то, 
+                                                   //что внутрь положили к типу данных, который указан первым (bool)
+                                                   // если это можно сделать, тогда помести (out) это значение в новую переменную с указанным именем (int i)
+                                                   // TryParse возвращает True или False
+if(!isParse)// если невозможно преобразовать наши данные, к тому типу, что мы прописали, то
+{
+    WriteLine("Введено не число");
+    return;
+}
 
  switch(i)
  {
@@ -30,7 +38,7 @@ int i = int.Parse(ReadLine()!);
     }
     default:
     {
-        WriteLine("Ошибка");
+        WriteLine("Нет такой четверти");
         break;
     }
  }
