@@ -5,3 +5,17 @@
 
 using static System.Console;
 Clear();
+WriteLine("Введите первое число ");
+int first_number = int.Parse(ReadLine()!);
+WriteLine("Введите второе число ");
+int second_number = int.Parse(ReadLine()!);
+int ost = first_number % second_number;
+if(first_number%second_number == 0)
+{
+    WriteLine("Кратно");
+
+}
+else
+{
+WriteLine($"Не кратно и остаток {ost}");
+}
