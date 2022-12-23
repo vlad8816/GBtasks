@@ -35,5 +35,5 @@ if(!isParse4)
     WriteLine("Не введены координаты");
     return;
 }
-double length = Math.Sqrt(Math.Pow((ax-bx),2)+ Math.Pow((ay-by),2));
+double length = Math.Sqrt(Math.Pow((ax-bx),2)+ Math.Pow((ay-by),2));// Math.Sqrt - корень квадратный, Math.Pow - Возвращает указанное число(ax-bx), возведенное в указанную степень(2).
 WriteLine($"{length:f2}");// f2 это округление (2) количество знаков после запятой показывает
