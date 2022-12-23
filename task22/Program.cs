@@ -36,4 +36,4 @@ if(!isParse4)
     return;
 }
 double length = Math.Sqrt(Math.Pow((ax-bx),2)+ Math.Pow((ay-by),2));
-WriteLine(length);
+WriteLine($"{length:f2}");// f2 это округление (2) количество знаков после запятой показывает
