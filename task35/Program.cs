@@ -1,24 +1,43 @@
-﻿// Задайте массив. Напишите программу, которая определяет, присутствует ли заданное число в массиве.
+﻿// Задача 35: Задайте одномерный массив из 123 случайных чисел. 
+// Найдите количество элементов массива, значения которых лежат в отрезке [10,99].
 
-// 4; массив [6, 7, 19, 345, 3] -> нет
-
-// 3; массив [6, 7, 19, 345, 3] -> да
 using static System.Console;
 Clear();
 
-Write("ВВедите число: ");
-int.TryParse(ReadLine(), out int number);
+int [] array = GetArray(12, 10, 99);
+PrintArray(array);
+WriteLine();
+WriteLine(ArrayCount(array));
 
-int [] array = {-1, -2, 0, 2, 1, 3, 4 };
-
-bool result = ArrayLookUp(array, number);
-WriteLine(result);
-
-bool ArrayLookUp(int[] inArray, int num)
+int ArrayCount(int[] InArray)
 {
-    foreach (var i in inArray)
+    int result = 0;
+    foreach (int i in InArray)
     {
-        if (num == i) return true;
+        if (10 <= i && i <= 99) result ++;
     }
-    return false;
+    return result;
+}
+
+
+
+int[] GetArray(int size, int minValue, int maxValue)
+{
+    int[] resultArray = new int[size];
+    Random rnd = new Random();
+    for (int i = 0; i < size; i++)
+    {
+        resultArray[i] = rnd.Next(minValue, maxValue + 1);
+    }
+    return resultArray;
+}
+
+void PrintArray(int[] inArray)
+{
+    Write("[");
+    for (int i = 0; i < inArray.Length - 1; i++)
+    {
+        Write($"{inArray[i]}, ");
+    }
+WriteLine($"{inArray[inArray.Length - 1]}]");
 }
