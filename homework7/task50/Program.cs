@@ -42,13 +42,13 @@ void PrintMatrix (int[,] mtx)
         WriteLine();
     }
 }
-string SearchMatrix(int[,] mtx, int index0, int index1)
+string SearchMatrix(int[,] matrix, int index0, int index1)
 {
     string no = "такого элемента в массиве нет";
-    if(index0 > mtx.GetLength(0) || index1 > mtx.GetLength(1)) return no;
+    if(index0 > matrix.GetLength(0) || index1 > matrix.GetLength(1)) return no;
     else 
     {
-        string yes = Convert.ToString(mtx[index0, index1]);
+        string yes = Convert.ToString(matrix[index0, index1]);
         return yes;
     } 
 }

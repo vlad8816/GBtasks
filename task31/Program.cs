@@ -44,3 +44,30 @@ void PrintArray(int[] inArray)
     }
      Write($"{inArray[inArray.Length - 1]}],");
 }
+
+
+// WriteLine("Введите координаты А через пробел: ");
+// Point A = GetPointFromString(ReadLine()!);
+
+// WriteLine("Введите координаты B через пробел: ");
+// Point B = GetPointFromString(ReadLine()!);
+
+// WriteLine("Введите координаты C через пробел: ");
+// Point C = GetPointFromString(ReadLine()!);
+
+// double delta = Math.Sqrt(Math.Pow(A.X - B.X,2)+ Math.Pow(A.Y - B.Y,2)+ Math.Pow(A.Z - B.Z,2));
+// WriteLine(delta);
+// Point GetPointFromString(string inStr)
+// {
+//     string par = inStr.Split(" ",StringSplitOptions.RemoveEmptyEntries);
+//     res.X = int.Parse(par[0]);
+//     res.Y = int.Parse(par[1]);
+//     res.Z = int.Parse(par[2]);
+//     return res;
+// }
+// struct Point
+// {
+//     public int X;
+//     public int Y;
+//     public int Z;
+// }
